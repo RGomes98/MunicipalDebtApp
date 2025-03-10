@@ -17,9 +17,9 @@ type NotifyDialog = {
 
 export function NotifyDialog({ dialogState }: NotifyDialog) {
   function handleConfirmAction() {
-    dialogState.set(false);
     const MESSAGE = 'Um e-mail foi enviado ao setor de cobrança. Aguarde pela análise.';
     toast.success(<p className='text-xs'>{MESSAGE}</p>);
+    dialogState.set(false);
   }
   return (
     <AlertDialog open={dialogState.value}>
