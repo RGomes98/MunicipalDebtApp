@@ -14,7 +14,7 @@ O **Public Debt App** é um protótipo de sistema que permite aos agentes munici
 ### Objetivos
 
 - Simplificar a verificação de registros de óbito para evitar cobranças indevidas.
-- Facilitar o acesso dos agentes municipais às informações de dívida ativa por meio de CPF ou nome.
+- Facilitar o acesso dos agentes municipais às informações de dívida ativa.
 - Propor uma solução tecnológica eficiente para a gestão de dados tributários municipais.
 
 ### Justificativa
