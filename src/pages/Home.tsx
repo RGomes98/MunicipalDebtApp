@@ -23,8 +23,8 @@ export function Home() {
 
   return (
     <Fragment>
-      <div className='min-h-screen'>
-        <header className='sticky top-0 z-50 bg-blue-600 p-4 text-white shadow-md'>
+      <div className='font-inter min-h-screen'>
+        <header className='bg-primary sticky top-0 z-50 p-4 text-white shadow-md'>
           <Header />
         </header>
 
@@ -62,7 +62,7 @@ export function Home() {
           </Card>
         </main>
 
-        <footer className='flex items-center justify-center bg-blue-600 py-3 text-white shadow-md'>
+        <footer className='bg-primary flex items-center justify-center py-3 text-white shadow-md'>
           <Footer />
         </footer>
       </div>

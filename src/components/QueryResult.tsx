@@ -37,7 +37,7 @@ function downloadCSV({ fileName, fileBlob }: { fileName: string; fileBlob: Blob 
 export function QueryResult({ isLoading, formEntries, queryResult, dialogState }: QueryResult) {
   if (isLoading) {
     return (
-      <p className='-mt-2 flex items-center text-stone-600 max-sm:text-sm'>
+      <p className='-mt-2 flex items-center text-sm text-stone-600'>
         <Loader2 className='mr-2 size-6 animate-spin stroke-stone-600' />
         Buscando resultados, por favor, aguarde.
       </p>
@@ -46,7 +46,7 @@ export function QueryResult({ isLoading, formEntries, queryResult, dialogState }
 
   if (!formEntries) {
     return (
-      <p className='-mt-2 flex items-center text-stone-600 max-sm:text-sm'>
+      <p className='-mt-2 flex items-center text-sm text-stone-600'>
         <CircleAlert className='mr-2 size-6 stroke-stone-600' />
         Realize uma consulta para visualizar os resultados aqui.
       </p>
@@ -55,7 +55,7 @@ export function QueryResult({ isLoading, formEntries, queryResult, dialogState }
 
   if (!queryResult) {
     return (
-      <p className='-mt-2 flex items-center text-green-600 max-sm:text-sm'>
+      <p className='-mt-2 flex items-center text-sm text-green-600'>
         <CheckCircle className='mr-2' />
         Nenhuma dívida pendente encontrada.
       </p>
@@ -83,7 +83,7 @@ export function QueryResult({ isLoading, formEntries, queryResult, dialogState }
             </TableRow>
           </TableHeader>
           <TableBody>
-            <TableRow key={queryResult['CPF/CNPJ DEVEDOR']}>
+            <TableRow>
               <TableCell>{queryResult['CPF/CNPJ DEVEDOR']}</TableCell>
               <TableCell>{queryResult['NÚMERO DO TERMO DE INSCRIÇÃO']}</TableCell>
               <TableCell>{queryResult['TIPO DE PESSOA']}</TableCell>
