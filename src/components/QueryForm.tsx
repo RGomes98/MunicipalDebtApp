@@ -36,10 +36,9 @@ export function QueryForm({ isLoading, onSubmit }: QueryForm) {
         <Input name='name' placeholder='João da Silva' />
       </div>
       <div className='flex flex-col gap-4'>
-        <Label htmlFor='cpf'>CPF (obrigatório)</Label>
+        <Label htmlFor='cpf'>CPF (opcional)</Label>
         <Input
           value={input}
-          required
           maxLength={14}
           name='cpf'
           placeholder='000.000.000-00'
