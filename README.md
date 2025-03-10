@@ -24,5 +24,4 @@ O ajuizamento de dívidas contra pessoas falecidas gera custos desnecessários, 
 ### Referências
 
 - **Dataset usado para os mocks do projeto:**  
-  [Devedores da Dívida Ativa - Kaggle](https://www.kaggle.com/datasets/carlosqbarbosa/devedores-da-dvida-ativa)  
-  Fonte: [www.kaggle.com](https://www.kaggle.com)
+  [Devedores da Dívida Ativa - Kaggle](https://www.kaggle.com/datasets/carlosqbarbosa/devedores-da-dvida-ativa)
