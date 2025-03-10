@@ -5,6 +5,7 @@ import { CheckCircle, CircleAlert, Loader2 } from 'lucide-react';
 import type { FormEntries } from '@/hooks/useFormSubmit';
 import { ComponentProps, Fragment } from 'react';
 import { NotifyDialog } from './NotifyDialog';
+import { toast } from 'sonner';
 
 type QueryResult = {
   isLoading: boolean;
@@ -32,13 +33,14 @@ function downloadCSV({ fileName, fileBlob }: { fileName: string; fileBlob: Blob 
   link.click();
   document.body.removeChild(link);
   URL.revokeObjectURL(link.href);
+  toast.success('Relatório gerado com êxito.');
 }
 
 export function QueryResult({ isLoading, formEntries, queryResult, dialogState }: QueryResult) {
   if (isLoading) {
     return (
       <p className='-mt-2 flex items-center text-sm text-stone-600'>
-        <Loader2 className='mr-2 size-6 animate-spin stroke-stone-600' />
+        <Loader2 className='mr-1.5 size-4 animate-spin stroke-stone-600' />
         Buscando resultados, por favor, aguarde.
       </p>
     );
@@ -47,7 +49,7 @@ export function QueryResult({ isLoading, formEntries, queryResult, dialogState }
   if (!formEntries) {
     return (
       <p className='-mt-2 flex items-center text-sm text-stone-600'>
-        <CircleAlert className='mr-2 size-6 stroke-stone-600' />
+        <CircleAlert className='mr-1.5 size-4 stroke-stone-600' />
         Realize uma consulta para visualizar os resultados aqui.
       </p>
     );
@@ -56,7 +58,7 @@ export function QueryResult({ isLoading, formEntries, queryResult, dialogState }
   if (!queryResult) {
     return (
       <p className='-mt-2 flex items-center text-sm text-green-600'>
-        <CheckCircle className='mr-2' />
+        <CheckCircle className='mr-1.5 size-4' />
         Nenhuma dívida pendente encontrada.
       </p>
     );
