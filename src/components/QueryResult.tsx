@@ -79,7 +79,7 @@ export function QueryResult({ isLoading, formEntries, queryResult, dialogState }
               <TableHead>Credor</TableHead>
               <TableHead>Sequencial do Crédito</TableHead>
               <TableHead>Situação do Crédito</TableHead>
-              <TableHead>Valor</TableHead>
+              <TableHead>Saldo Devedor</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
