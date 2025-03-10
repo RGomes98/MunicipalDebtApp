@@ -33,7 +33,7 @@ function downloadCSV({ fileName, fileBlob }: { fileName: string; fileBlob: Blob 
   link.click();
   document.body.removeChild(link);
   URL.revokeObjectURL(link.href);
-  toast.success('Relatório gerado com êxito.');
+  toast.success(<p className='text-xs'>Relatório gerado com êxito.</p>);
 }
 
 export function QueryResult({ isLoading, formEntries, queryResult, dialogState }: QueryResult) {
