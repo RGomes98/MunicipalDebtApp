@@ -1,50 +1,28 @@
-# React + TypeScript + Vite
+## Projeto de Extensão: Public Debt App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositório contém o código-fonte e os recursos relacionados ao projeto **Public Debt App**, uma iniciativa de extensão do **Centro Universitário de Volta Redonda – Fundação Oswaldo Aranha**, em parceria com a **FAPERJ**, voltada para otimizar a verificação de débitos municipais e evitar cobranças indevidas.
 
-Currently, two official plugins are available:
+### Descrição do Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O **Public Debt App** é um protótipo de sistema que permite aos agentes municipais verificarem se uma pessoa possui pendências financeiras ativas na base de dados da **Prefeitura Municipal de Volta Redonda**. O objetivo principal é reduzir erros administrativos, especialmente relacionados à cobrança de dívidas de pessoas falecidas.
 
-## Expanding the ESLint configuration
+### Cursos Envolvidos
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Sistemas de Informação**
+- **Engenharia de Produção**
 
-- Configure the top-level `parserOptions` property like this:
+### Objetivos
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
-```
+- Simplificar a verificação de registros de óbito para evitar cobranças indevidas.
+- Facilitar o acesso dos agentes municipais às informações de dívida ativa por meio de CPF ou nome.
+- Propor uma solução tecnológica eficiente para a gestão de dados tributários municipais.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Justificativa
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react';
+O ajuizamento de dívidas contra pessoas falecidas gera custos desnecessários, retrabalho e impacto negativo na gestão pública. Este projeto busca melhorar a eficiência administrativa ao integrar dados de óbito e dívida ativa, promovendo maior confiabilidade no processo de cobrança municipal.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-});
-```
+### Referências
+
+- **Dataset usado para os mocks do projeto:**  
+  [Devedores da Dívida Ativa - Kaggle](https://www.kaggle.com/datasets/carlosqbarbosa/devedores-da-dvida-ativa)  
+  Fonte: [www.kaggle.com](https://www.kaggle.com)
