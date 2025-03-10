@@ -21,6 +21,19 @@ O **Public Debt App** é um protótipo de sistema que permite aos agentes munici
 
 O ajuizamento de dívidas contra pessoas falecidas gera custos desnecessários, retrabalho e impacto negativo na gestão pública. Este projeto busca melhorar a eficiência administrativa ao integrar dados de óbito e dívida ativa, promovendo maior confiabilidade no processo de cobrança municipal.
 
+## Ferramentas e Bibliotecas Utilizadas:
+
+- **React.js**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **TypeScript**: Superset do JavaScript que adiciona tipagem estática para maior segurança e escalabilidade.
+- **Tailwind CSS**: Biblioteca para estilização com utilitários, proporcionando maior agilidade na criação de interfaces.
+- **Radix UI**: Conjunto de componentes acessíveis e estilizáveis para interfaces modernas.
+- **Lucide React**: Conjunto de ícones modernos e personalizáveis para aplicações React.
+- **Sonner**: Biblioteca para exibição de notificações intuitivas.
+- **Tanstack Table**: Biblioteca para criação e manipulação de tabelas altamente customizáveis.
+- **ESLint**: Ferramenta de linting para manter um código limpo e padronizado.
+- **Prettier**: Ferramenta para formatação automática do código, garantindo consistência no estilo.
+- **Vite**: Ferramenta de build rápida e otimizada para desenvolvimento frontend.
+
 ### Referências
 
 - **Dataset utilizado para os mocks do projeto:**  
