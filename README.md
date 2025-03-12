@@ -1,4 +1,4 @@
-## Projeto de Extensão: Public Debt App
+## Projeto de Extensão: Public Debt App - Protótipo
 
 Este repositório contém o código-fonte e os recursos relacionados ao projeto **Public Debt App**, uma iniciativa de extensão do **Centro Universitário de Volta Redonda – Fundação Oswaldo Aranha**, em parceria com a **FAPERJ**, voltada para otimizar a verificação de débitos municipais e evitar cobranças indevidas.
 
